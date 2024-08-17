@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.glass-container {
+  position: absolute;
+  top: 50%; /* Adjusted to move it down slightly */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Add space between elements */
+}
+
+.text {
+  margin-bottom: 20px; /* Add space below the text */
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 16px;
+}
+
+.search-bar #predict-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-bar #predict-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+textarea {
+  width: 100%;
+  height: 200px; /* Adjusted height */
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2); /* More transparent */
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+  overflow: auto;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 20px; /* Position it at the bottom */
+  right: 20px; /* Adjust distance from the right edge */
+  display: flex;
+  gap: 15px;
+  z-index: 1;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ccc; /* Change color on hover */
+}
+
+.brand-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.brand-text h1 {
+  font-size: 68px; /* Increased font size */
+  font-family: 'Playfair Display', serif; /* Use a different font */
+  margin: 0;
+}
+
+.intro-text {
+  position: absolute;
+  top: 20px; /* Adjusted to move it down */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  z-index: 1;
+}
+
+.intro-text h2 {
+  font-size: 16px; /* Smaller font size */
+  font-family: sans-serif;
+  font-weight: normal; /* Ensure text is not bold */
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+/* Existing styles */
+
+.highlight {
+  padding: 0 2px;
+  border-radius: 4px;
+  display: inline-block;
+}
